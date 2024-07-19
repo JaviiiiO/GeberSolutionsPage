@@ -2,20 +2,22 @@ import Hero from "../Hero/Hero";
 import styles from "./Header.module.css"
 
 const Header = () => {
-    return(
+    return (
         <header className={styles.headerContainer}>
             <nav className={styles.navContainer}>
-                <ul className={styles.listContainer}>
-                    <li className={styles.red}><a href="/"></a>Home</li>
-                    <li><a href="/"><img src="logo.png" alt="logo"></img></a></li>
-                    <li className={styles.blue}><a href="/"></a>Services</li>
-                </ul>
+                <div className={styles.centerGroup}>
+                    <a href="/" className={`${styles.navItem} ${styles.red}`}>Home</a>
+                    <a href="/"><img src="logo.png" alt="logo" className={styles.logo} /></a>
+                    <a href="/" className={`${styles.navItem} ${styles.blue}`}>Services</a>
+                </div>
+                <div className={styles.rightGroup}>
+                    <p><img src="/gmail.svg"/>sales@gebersolutions.com</p>
+                    <p><img src="/tel.svg"/>+1 757-805-8804</p>
+                </div>
             </nav>
-
             <Hero />
         </header>
-
-        )
+    )
 }
 
 export default Header;
