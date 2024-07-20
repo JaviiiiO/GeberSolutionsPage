@@ -21,11 +21,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 100px;
+    padding: 60px;
     width: 100%;
     position: relative;
     z-index: 1;
-    background-color: aliceblue;
+    background-color: rgb(255, 254, 248);
 }
 
 .centerGroup {
@@ -54,7 +54,7 @@
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
@@ -89,11 +89,15 @@
     }
 
     .navContainer{
-        padding: 120px;
+        padding: 90px;
+    }
+
+    .headerContainer{
+        height: 80vh;
     }
     
     .headerContainer::before {
-        height: 75%;
+        height: 90%;
     }
     
     .centerGroup {
