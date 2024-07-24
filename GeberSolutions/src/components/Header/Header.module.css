@@ -1,6 +1,7 @@
 .headerContainer {
     width: 100%;
     height: 100vh;
+
     position: relative;
 }
 
@@ -11,14 +12,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGhna3lxcjhwYTc1MHZmZDd1YmQxYmpvcjAwdWdpZzhzN3Qzb2l5biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OxtbzcqNK3Lz8EEE7b/giphy.webp) center/cover no-repeat;
+    background: #868686d1;
     filter: brightness(0.5);
     z-index: -1;
 }
 
 .navContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
     padding: 60px;
@@ -59,8 +60,24 @@
 }
 
 .rightGroup {
+    line-height: 24px;
+}
+.rightGroup2 {
     margin-left: auto;
     line-height: 24px;
+}
+
+.rightGroup2 img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.leftGroup {
+    margin-left: auto;}
+
+.leftGroup a{
+    margin: 12px;
 }
 
 .rightGroup img{
