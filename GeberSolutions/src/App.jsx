@@ -1,16 +1,15 @@
-import Contenedores from "./components/Cards/Contenedores/Contenedores";
+//import Contenedores from "./components/Cards/Contenedores/Contenedores";
+//import FormComponent from "./components/FormComponent/FormComponent";
 import Header from "./components/Header/Header";
 import Footer from "./Footer/Footer";
+import Services from "./components/Services/Services";
+import ContactForm from "./components/ContactForm/ContactForm";
 const App = () => {
   return (
     <>
       <Header />
-      <div style={{ padding: "12px", margin: "12px" }}>
-        <Contenedores width="100%">About us</Contenedores>
-        <Contenedores width="50%">Section</Contenedores>
-        <Contenedores width="50%">Section2</Contenedores>
-        <Contenedores>Form</Contenedores>
-      </div>
+      <Services />
+      <ContactForm />
       <Footer />
     </>
   );

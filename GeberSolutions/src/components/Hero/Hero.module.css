@@ -1,3 +1,37 @@
+/* Animación para el título */
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animación para el texto */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animación para el botón */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 .heroContainer{
     display: flex;
     flex-direction: column;
@@ -9,6 +43,15 @@
     font-size: 32px;
     color: #fff;    
 }
+
+.heroTitle {
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .heroText {
+    animation: fadeInUp 1s ease-out 0.5s; /* Retraso de 0.5s */
+    animation-fill-mode: both; /* Mantiene el estado final de la animación */
+  }
 
 .heroContent{
     display: flex;
@@ -25,7 +68,7 @@
 }
 
 .heroButton{
-    margin-top: 16px;
+    margin-top: 20px;
     padding: 12px;
     border-radius: 16px;
     background-color: #545454;
@@ -33,6 +76,8 @@
     font-size: 30px;
     border: 1px solid #f3f3f3;
     text-decoration: none;
+    animation: fadeIn 1s ease-out 1s; /* Retraso de 1s */
+    animation-fill-mode: both;
 }
 
 .heroButton:hover{
@@ -44,7 +89,7 @@
     .heroContainer{
         padding-left: 16px;
         width: 100%;
-        height: 45vh;
+        height: 55vh;
         font-size: 24px;
     }
 

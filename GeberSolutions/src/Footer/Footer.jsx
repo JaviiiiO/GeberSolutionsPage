@@ -5,7 +5,7 @@ const Footer = () => {
     // Footer container
     <footer className={styles.footer}>
       <img src="/public/logo.png" alt="Logo image" />
-      <p>© 2024 Geber Solutions</p>
+      <p>© 2025 Geber Solutions</p>
       <div className={styles.footerLinks}>
         <a
           href="https://www.facebook.com/gebersolutions"
